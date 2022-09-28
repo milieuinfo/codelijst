@@ -41,96 +41,50 @@
 @prefix omg_package: <https://data.omgeving.vlaanderen.be/id/package/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
-omg_named_graph:algemeen-catalog-publiek
-        a                   sd:NamedGraph ;
-        rdfs:label          "Graph algemeen-catalog-publiek"@nl ;
-        dc:identifier       "be.vlaanderen.omgeving.data.id.graph.algemeen-catalog-publiek" ;
-        dcterms:identifier  omg_named_graph:algemeen-catalog-publiek ;
-        dcterms:source      omg_package:be.vlaanderen.omgeving.data.id.graph.algemeen-catalog-publiek ;
-        sd:name             omg_graph:algemeen-catalog-publiek .
+omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst
+        a                 spdx:Package ;
+        rdfs:label        "Package codelijst"@nl ;
+        spdx:packageName  "be.vlaanderen.omgeving.data.id.graph.codelijst" .
 
-omg_package:be.vlaanderen.omgeving.dsi.data.id.graph.algemeen-catalog-publiek
+omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-sommatie_stoffen
         a                      spdx:Package ;
-        rdfs:label             "Package algemeen-catalog-publiek"@nl ;
-        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/algemeen-catalog-publiek/1.0.0/algemeen-catalog-publiek-1.0.0.jar"^^xsd:anyURI ;
-        spdx:packageFileName   "algemeen-catalog-publiek-1.0.0.jar" ;
-        spdx:packageName       "be.vlaanderen.omgeving.dsi.data.id.graph.algemeen-catalog-publiek" ;
-        spdx:versionInfo       "1.0.0" .
+        rdfs:label             "Package codelijst-sommatie_stoffen"@nl ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-sommatie_stoffen/1.0.2/codelijst-sommatie_stoffen-1.0.2.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-sommatie_stoffen-1.0.2.jar" ;
+        spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-sommatie_stoffen" ;
+        spdx:relationshipType_packageOf
+                omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
+        spdx:versionInfo       "1.0.2" .
 
-omg_distribution:codelijst-bioindicator_jsonld
-        a                     dcat:Distribution ;
-        rdfs:label            "Codelijst Bioindicatoren, in jsonld rdf-formaat."@nl ;
-        dc:identifier         "be.vlaanderen.omgeving.data.id.distribution.codelijst-bioindicator_jsonld" ;
-        dcterms:accessRights  access_right:PUBLIC ;
-        dcterms:description   "Codelijst Bioindicatoren, geserialiseerd in een jsonld bestand."@nl ;
-        dcterms:format        file_type:JSON_LD ;
-        dcterms:identifier    omg_distribution:codelijst-bioindicator_jsonld ;
-        dcterms:issued        "2022-09-10"^^xsd:date ;
-        dcterms:rightsHolder  ovo:OVO003751 ;
-        dcterms:title         "Codelijst Bioindicatoren in jsonld rdf-formaat."@nl ;
-        dcat:accessURL        <https://github.com/milieuinfo/codelijst-bioindicator.git> ;
-        dcat:compressFormat   <http://www.iana.org/assignments/media-types/application/gzip> ;
-        dcat:downloadURL      <https://github.com/milieuinfo/codelijst-bioindicator/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/bioindicator/bioindicator.jsonld> ;
-        dcat:mediaType        <https://www.iana.org/assignments/media-types/application/ld+json> ;
-        foaf:page             <https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-bioindicator_jsonld.html> .
+omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap
+        a                      spdx:Package ;
+        rdfs:label             "Package codelijst-fysico-chemische-eigenschap"@nl ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-fysico-chemische-eigenschap/1.0.2/codelijst-fysico-chemische-eigenschap-1.0.2.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-fysico-chemische-eigenschap-1.0.2.jar" ;
+        spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap" ;
+        spdx:relationshipType_packageOf
+                omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
+        spdx:versionInfo       "1.0.2" .
 
-omg_distribution:codelijst-bioindicator_csv
-        a                     dcat:Distribution ;
-        rdfs:label            "Codelijst Bioindicatoren, in text/csv formaat."@nl ;
-        dc:identifier         "be.vlaanderen.omgeving.data.id.distribution.codelijst-bioindicator_ttl" ;
-        dcterms:accessRights  access_right:PUBLIC ;
-        dcterms:description   "Codelijst Bioindicatoren, geserialiseerd in csv tabelformaat."@nl ;
-        dcterms:format        file_type:CSV ;
-        dcterms:identifier    omg_distribution:codelijst-bioindicator_ttl ;
-        dcterms:issued        "2022-09-10"^^xsd:date ;
-        dcterms:rightsHolder  ovo:OVO003751 ;
-        dcterms:title         "Codelijst Bioindicatoren in text/csv formaat."@nl ;
-        dcat:accessURL        <https://github.com/milieuinfo/codelijst-bioindicator.git> ;
-        dcat:compressFormat   <http://www.iana.org/assignments/media-types/application/gzip> ;
-        dcat:downloadURL      <https://github.com/milieuinfo/codelijst-bioindicator/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/bioindicator/bioindicator.csv> ;
-        dcat:mediaType        <https://www.iana.org/assignments/media-types/text/csv> ;
-        foaf:page             <https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-bioindicator_csv.html> .
+omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-emissie
+        a                      spdx:Package ;
+        rdfs:label             "Package codelijst-emissie"@nl ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.0.2/codelijst-emissie-1.0.2.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-emissie-1.0.2.jar" ;
+        spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-emissie" ;
+        spdx:relationshipType_packageOf
+                omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
+        spdx:versionInfo       "1.0.2" .
 
-omg_service:sparqlservice
-        a                     sd:Service ;
-        rdfs:comment          "Een beschrijving, met de verschillende kenmerken, van de sparql service."@nl ;
-        rdfs:label            "Sparql service conform SPARQL 1.1 Protocol."@nl ;
-        sd:availableGraphs    omg_graphcollection:sparqlservice ;
-        sd:defaultDataset     omg_graphcollection:sparqlservice ;
-        sd:endpoint           <https://data.omgeving.vlaanderen.be/sparql> ;
-        sd:feature            sd:UnionDefaultGraph , sd:DereferencesURIs ;
-        sd:resultFormat       formats:SPARQL_Results_JSON , formats:Turtle , formats:SPARQL_Results_XML , formats:SPARQL_Results_CSV , formats:N3 , formats:N-Triples , formats:RDF_XML ;
-        sd:supportedLanguage  sd:SPARQL10Query ;
-        sd:url                <https://data.omgeving.vlaanderen.be/sparql> .
-
-omg_dataset:codelijst-bioindicator
-        a                           dcat:Dataset ;
-        rdfs:label                  "Dataset Codelijst Bioindicatoren"@nl ;
-        dc:identifier               "be.vlaanderen.omgeving.data.id.dataset.codelijst-bioindicator" ;
-        dc:language                 "nl"@nl ;
-        dcterms:accessRights        access_right:PUBLIC ;
-        dcterms:accrualPeriodicity  frequency:IRREG ;
-        dcterms:alternative         "Codelijst Bioindicatoren Dataset"@nl ;
-        dcterms:description         "Deze dataset bevat een lijst van bio-indicatoren gebruikt binnen het beleidsdomein omgeving van de Vlaamse Overheid en zoals die initieel binnen het kader van het OSLO thema omgeving is opgesteld."@nl ;
-        dcterms:identifier          omg_dataset:codelijst-bioindicator ;
-        dcterms:issued              "2022-03-01"^^xsd:date ;
-        dcterms:language            language:NLD ;
-        dcterms:license             <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0> ;
-        dcterms:publisher           ovo:OVO003323 ;
-        dcterms:rightsHolder        ovo:OVO003751 ;
-        dcterms:spatial             <https://www.geonames.org/3337388/flanders> , country:BEL ;
-        dcterms:temporal            omg_periodoftime:dataset_omg ;
-        dcterms:title               "Thesaurus bio-indicatoren"@nl ;
-        dcat:contactPoint           omg_vcard:helpdesk ;
-        dcat:distribution           omg_distribution:codelijst-bioindicator_csv , omg_distribution:codelijst-bioindicator_ttl , omg_distribution:codelijst-bioindicator_jsonld ;
-        dcat:landingPage            <https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html> ;
-        dcat:theme                  gemet:10087 , datatheme_be:ENVI , eurovoc:2407 , datatheme_eu:ENVI ;
-        foaf:page                   <https://data.omgeving.vlaanderen.be/doc/dataset/codelijst-bioindicator.html> .
-
-omg_graphcollection:sparqlservice
-        a              sd:GraphCollection , sd:Dataset ;
-        rdfs:label     "De graphen die gebruikt kunnen worden in de constructie van een dataset via SPARQL Protocol."@nl ;
-        sd:namedGraph  omg_named_graph:algemeen-catalog-publiek , omg_named_graph:algemeen-conceptschemes-publiek .
+omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-matrix
+        a                      spdx:Package ;
+        rdfs:label             "Package codelijst-matrix"@nl ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-matrix/1.0.2/codelijst-matrix-1.0.2.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-matrix-1.0.2.jar" ;
+        spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-matrix" ;
+        spdx:relationshipType_packageOf
+                omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
+        spdx:versionInfo       "1.0.2" .
 
 omg_catalog:codelijst
         a                     dcat:Catalog ;
@@ -148,60 +102,37 @@ omg_catalog:codelijst
         dcterms:rightsHolder  ovo:OVO003751 ;
         dcterms:spatial       <https://www.geonames.org/3337388/flanders> , country:BEL ;
         dcterms:title         "Catalogus van datasets, codelijsten, van het domein omgeving."@nl ;
-        void:rootResource     omg_catalog:dsi ;
+        void:rootResource     omg_catalog:codelijst ;
+        owl:versionInfo       "Versie 1.0.0  september 2022" ;
         dcat:contactPoint     omg_vcard:helpdesk ;
-        dcat:dataset          omg_dataset:codelijst-bioindicator ;
-        dcat:service          omg_dataservice:sparqlendpoint ;
-        sd:namedGraph         omg_named_graph:algemeen-catalog-publiek ;
-        foaf:homepage         <https://data.omgeving.vlaanderen.be/doc/catalog/dsi.html> .
+        foaf:homepage         <https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html> .
 
-omg_dataservice:sparqlendpoint
-        a                         dcat:DataService ;
-        rdfs:label                "Sparql endpoint DSI datasets"@nl ;
-        dc:identifier             "be.vlaanderen.omgeving.data.id.dataservice.sparqlendpoint" ;
-        dcterms:accessRights      access_right:PUBLIC ;
-        dcterms:conformsTo        <http://www.w3.org/TR/sparql11-protocol/> ;
-        dcterms:description       "Sparql endpoint api op de datasets gepubliceerd onder het DSI domein."@nl ;
-        dcterms:identifier        omg_dataservice:sparqlendpoint ;
-        dcterms:license           <http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0> ;
-        dcterms:publisher         ovo:OVO003323 ;
-        dcterms:title             "Sparql endpoint DSI datasets"@nl ;
-        dcat:contactPoint         omg_vcard:helpdesk ;
-        dcat:endpointDescription  omg_service:sparqlservice ;
-        dcat:endpointURL          <https://data.omgeving.vlaanderen.be/sparql> ;
-        dcat:landingPage          <https://data.omgeving.vlaanderen.be/#sparqlForm> ;
-        dcat:servesDataset        omg_dataset:codelijst-bioindicator ;
-        foaf:page                 <https://data.omgeving.vlaanderen.be/doc/dataservice/sparqlendpoint.html> .
-
-omg_named_graph:algemeen-conceptschemes-publiek
-        a                   sd:NamedGraph ;
-        rdfs:label          "Graph algemeen-conceptschemes-publiek"@nl ;
-        dc:identifier       "be.vlaanderen.omgeving.data.id.graph.algemeen-conceptschemes-publiek" ;
-        dcterms:identifier  omg_named_graph:dsi-data-intern ;
-        dcterms:source      omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator ;
-        sd:name             omg_graph:algemeen-conceptschemes-publiek .
-
-omg_distribution:codelijst-bioindicator_ttl
-        a                     dcat:Distribution ;
-        rdfs:label            "Codelijst Bioindicatoren, in Turtle rdf-formaat."@nl ;
-        dc:identifier         "be.vlaanderen.omgeving.data.id.distribution.codelijst-bioindicator_ttl" ;
-        dcterms:accessRights  access_right:PUBLIC ;
-        dcterms:description   "Codelijst Bioindicatoren, geserialiseerd in Turtle bestand."@nl ;
-        dcterms:format        file_type:RDF_TURTLE ;
-        dcterms:identifier    omg_distribution:codelijst-bioindicator_ttl ;
-        dcterms:issued        "2022-09-10"^^xsd:date ;
-        dcterms:rightsHolder  ovo:OVO003751 ;
-        dcterms:title         "Codelijst Bioindicatoren in Turtle rdf-formaat."@nl ;
-        dcat:accessURL        <https://github.com/milieuinfo/codelijst-bioindicator.git> ;
-        dcat:compressFormat   <http://www.iana.org/assignments/media-types/application/gzip> ;
-        dcat:downloadURL      <https://github.com/milieuinfo/codelijst-bioindicator/raw/main/src/main/resources/be/vlaanderen/omgeving/data/id/conceptscheme/bioindicator/bioindicator.ttl> ;
-        dcat:mediaType        <https://www.iana.org/assignments/media-types/text/turtle> ;
-        foaf:page             <https://data.omgeving.vlaanderen.be/doc/distribution/codelijst-bioindicator_ttl.html> .
+omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof
+        a                      spdx:Package ;
+        rdfs:label             "Package codelijst-chemische_stof"@nl ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.1/codelijst-chemische_stof-1.0.1.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-chemische_stof-1.0.1.jar" ;
+        spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof" ;
+        spdx:relationshipType_packageOf
+                omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
+        spdx:versionInfo       "1.0.1" .
 
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator
         a                      spdx:Package ;
-        rdfs:label             "Package algemeen-conceptschemes-publiek"@nl ;
-        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-bioindicator/1.0.0/codelijst-bioindicator-1.0.0.jar"^^xsd:anyURI ;
-        spdx:packageFileName   "codelijst-bioindicator-1.0.0.jar" ;
+        rdfs:label             "Package codelijst-bioindicator"@nl ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-bioindicator/1.0.1/codelijst-bioindicator-1.0.1.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-bioindicator-1.0.1.jar" ;
         spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator" ;
-        spdx:versionInfo       "1.0.0" .
+        spdx:relationshipType_packageOf
+                omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
+        spdx:versionInfo       "1.0.1" .
+
+omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-observatieprocedure
+        a                      spdx:Package ;
+        rdfs:label             "Package codelijst-observatieprocedure"@nl ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-observatieprocedure/1.0.2/codelijst-observatieprocedure-1.0.2.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-observatieprocedure-1.0.2.jar" ;
+        spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-observatieprocedure" ;
+        spdx:relationshipType_packageOf
+                omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
+        spdx:versionInfo       "1.0.2" .

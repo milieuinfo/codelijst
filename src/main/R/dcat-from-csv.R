@@ -4,32 +4,44 @@ library(dplyr)
 library(jsonlite)
 library(data.table)
 library(stringr)
-
+setwd('/home/gehau/git/codelijst/src/main/R')
 artifactory <- "https://repo.omgeving.vlaanderen.be/artifactory/release"
 
 # read pom.xml 
 x <- read_xml("../../../pom.xml")
 xml_ns_strip( x )
-groupId <- xml_text( xml_find_first(x, "/project/groupId") )
-artifactId <- xml_text( xml_find_first(x, "/project/artifactId") )
-version <- xml_text( xml_find_first(x, "/project/version") )
-name <- xml_text( xml_find_first(x, "/project/name") )
-
-class_path  <- gsub("\\.","/", groupId) 
-version_next_release <- strsplit(version, '-')[[1]][1]
-version_former_release <- paste(strsplit(version_next_release, '\\.')[[1]][1],strsplit(version_next_release, '\\.')[[1]][2],as.character(as.integer(strsplit(version_next_release, '\\.')[[1]][3])-1) , sep = "."  )
-packageFileName_ <- paste(name,'-',version_former_release,'.jar', sep = "")
-packageName_ <- paste(groupId, name, sep = ".")
-package_id <- paste("omg_package", packageName_, sep = ":")
-downloadLocation_ <- paste(artifactory, class_path, name, version_former_release, packageFileName_, sep = "/")
-
+my_groupId <- xml_text( xml_find_first(x, "/project/groupId") )
+my_artifactId <- xml_text( xml_find_first(x, "/project/artifactId") )
+my_packageName_ <- paste(my_groupId, my_artifactId, sep = ".")
+my_package_id <- paste("omg_package", my_packageName_, sep = ":")
+dependencies <- xml_find_all(x, "/project/dependencies/dependency")
 
 df <- read.csv(file = "../resources/be/vlaanderen/omgeving/data/id/catalog/codelijst/catalog.csv", sep=",", na.strings=c("","NA"))
-setDT(df)[id == package_id, downloadLocation := downloadLocation_]
-setDT(df)[id == package_id, packageFileName := packageFileName_]
-setDT(df)[id == package_id, packageName := packageName_]
-setDT(df)[id == package_id, versionInfo := version_former_release]
-write.csv(df,"../resources/be/vlaanderen/omgeving/data/id/catalog/codelijst/catalog.csv", row.names = FALSE)
+
+df2 <- data.frame(my_package_id, 'spdx:Package', my_packageName_, paste("Package", my_artifactId, sep = " "))
+names(df2) <- c("id","type", "packageName", "label")
+df <- bind_rows(df, df2)
+
+for (dependency in dependencies){
+  groupId <- xml_text( xml_find_first(dependency, "groupId") )
+  artifactId <- xml_text( xml_find_first(dependency, "artifactId") )
+  version <- xml_text( xml_find_first(dependency, "version") )
+  class_path  <- gsub("\\.","/", groupId) 
+  packageFileName_ <- paste(artifactId,'-',version,'.jar', sep = "")
+  packageName_ <- paste(groupId, artifactId, sep = ".")
+  package_id <- paste("omg_package", packageName_, sep = ":")
+  downloadLocation_ <- paste(artifactory, class_path, artifactId, version, packageFileName_, sep = "/")
+  
+  df2 <- data.frame(package_id, 'spdx:Package', downloadLocation_, packageFileName_, packageName_, version, my_package_id, paste("Package", artifactId, sep = " "))
+  names(df2) <- c("id","type", "downloadLocation", "packageFileName", "packageName",  "versionInfo", "relationshipType_packageOf", "label")
+  df <- bind_rows(df, df2)
+  #setDT(df)[id == package_id, downloadLocation := downloadLocation_]
+  #setDT(df)[id == package_id, packageFileName := packageFileName_]
+  #setDT(df)[id == package_id, packageName := packageName_]
+  #setDT(df)[id == package_id, versionInfo := version]
+}
+
+#write.csv(df,"../resources/be/vlaanderen/omgeving/data/id/catalog/codelijst/catalog.csv", row.names = FALSE)
 df <- df %>%
   mutate_all(list(~ str_c("", .)))
 for(col in 1:ncol(df)) {   # for-loop over columns
