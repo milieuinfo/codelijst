@@ -4,7 +4,7 @@ library(dplyr)
 library(jsonlite)
 library(data.table)
 library(stringr)
-setwd('/home/gehau/git/codelijst/src/main/R')
+#setwd('/home/gehau/git/codelijst/src/main/R')
 artifactory <- "https://repo.omgeving.vlaanderen.be/artifactory/release"
 
 # read pom.xml 
@@ -15,6 +15,8 @@ my_artifactId <- xml_text( xml_find_first(x, "/project/artifactId") )
 my_packageName_ <- paste(my_groupId, my_artifactId, sep = ".")
 my_package_id <- paste("omg_package", my_packageName_, sep = ":")
 dependencies <- xml_find_all(x, "/project/dependencies/dependency")
+v <- xml_text( xml_find_first(x, "/project/version") )
+version_next_release <- strsplit(v, '-')[[1]][1]
 
 df <- read.csv(file = "../resources/be/vlaanderen/omgeving/data/id/catalog/codelijst/catalog.csv", sep=",", na.strings=c("","NA"))
 
@@ -35,15 +37,12 @@ for (dependency in dependencies){
   df2 <- data.frame(package_id, 'spdx:Package', downloadLocation_, packageFileName_, packageName_, version, my_package_id, paste("Package", artifactId, sep = " "))
   names(df2) <- c("id","type", "downloadLocation", "packageFileName", "packageName",  "versionInfo", "relationshipType_packageOf", "label")
   df <- bind_rows(df, df2)
-  #setDT(df)[id == package_id, downloadLocation := downloadLocation_]
-  #setDT(df)[id == package_id, packageFileName := packageFileName_]
-  #setDT(df)[id == package_id, packageName := packageName_]
-  #setDT(df)[id == package_id, versionInfo := version]
 }
 
 #write.csv(df,"../resources/be/vlaanderen/omgeving/data/id/catalog/codelijst/catalog.csv", row.names = FALSE)
 df <- df %>%
   mutate_all(list(~ str_c("", .)))
+setDT(df)[type == "dcat:Catalog", owl.versionInfo := version_next_release]
 for(col in 1:ncol(df)) {   # for-loop over columns
   df <- df %>%
     separate_rows(col, sep = "\\|")
