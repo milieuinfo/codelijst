@@ -34,7 +34,7 @@
       "@language" : "nl",
       "@value" : "Catalogus van datasets, codelijsten, van het domein omgeving."
     },
-    "owl:versionInfo" : "1.0.0",
+    "owl:versionInfo" : "1.0.3",
     "contactPoint" : "omg_vcard:helpdesk",
     "homepage" : "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html"
   }, {
