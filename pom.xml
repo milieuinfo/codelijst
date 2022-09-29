@@ -40,6 +40,7 @@
                   <includes>
                     <include>be/vlaanderen/omgeving/data/id/conceptscheme/**</include>
                     <include>be/vlaanderen/omgeving/data/id/dataset/**</include>
+                    <include>be/vlaanderen/omgeving/data/id/catalog/**</include>
                   </includes>
                   <excludes>
                     <exclude>**/*json</exclude>
@@ -58,7 +59,7 @@
     </plugins>
     <resources>
       <resource>
-        <directory>src/main/resources/be/vlaanderen/omgeving/data/id/catalog</directory>
+        <directory>src/main/resources</directory>
         <filtering>false</filtering>
         <excludes>
         </excludes>
