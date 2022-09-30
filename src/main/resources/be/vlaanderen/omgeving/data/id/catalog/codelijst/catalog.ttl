@@ -59,32 +59,32 @@ omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-sommatie_stoffen
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap
         a                      spdx:Package ;
         rdfs:label             "Package codelijst-fysico-chemische-eigenschap"@nl ;
-        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-fysico-chemische-eigenschap/1.0.4/codelijst-fysico-chemische-eigenschap-1.0.4.jar"^^xsd:anyURI ;
-        spdx:packageFileName   "codelijst-fysico-chemische-eigenschap-1.0.4.jar" ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-fysico-chemische-eigenschap/1.0.5/codelijst-fysico-chemische-eigenschap-1.0.5.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-fysico-chemische-eigenschap-1.0.5.jar" ;
         spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap" ;
         spdx:relationshipType_packageOf
                 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
-        spdx:versionInfo       "1.0.4" .
+        spdx:versionInfo       "1.0.5" .
 
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-emissie
         a                      spdx:Package ;
         rdfs:label             "Package codelijst-emissie"@nl ;
-        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.0.4/codelijst-emissie-1.0.4.jar"^^xsd:anyURI ;
-        spdx:packageFileName   "codelijst-emissie-1.0.4.jar" ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.0.5/codelijst-emissie-1.0.5.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-emissie-1.0.5.jar" ;
         spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-emissie" ;
         spdx:relationshipType_packageOf
                 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
-        spdx:versionInfo       "1.0.4" .
+        spdx:versionInfo       "1.0.5" .
 
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-matrix
         a                      spdx:Package ;
         rdfs:label             "Package codelijst-matrix"@nl ;
-        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-matrix/1.0.4/codelijst-matrix-1.0.4.jar"^^xsd:anyURI ;
-        spdx:packageFileName   "codelijst-matrix-1.0.4.jar" ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-matrix/1.0.5/codelijst-matrix-1.0.5.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-matrix-1.0.5.jar" ;
         spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-matrix" ;
         spdx:relationshipType_packageOf
                 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
-        spdx:versionInfo       "1.0.4" .
+        spdx:versionInfo       "1.0.5" .
 
 omg_catalog:codelijst
         a                     dcat:Catalog ;
@@ -110,22 +110,22 @@ omg_catalog:codelijst
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof
         a                      spdx:Package ;
         rdfs:label             "Package codelijst-chemische_stof"@nl ;
-        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.3/codelijst-chemische_stof-1.0.3.jar"^^xsd:anyURI ;
-        spdx:packageFileName   "codelijst-chemische_stof-1.0.3.jar" ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.4/codelijst-chemische_stof-1.0.4.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-chemische_stof-1.0.4.jar" ;
         spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof" ;
         spdx:relationshipType_packageOf
                 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
-        spdx:versionInfo       "1.0.3" .
+        spdx:versionInfo       "1.0.4" .
 
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator
         a                      spdx:Package ;
         rdfs:label             "Package codelijst-bioindicator"@nl ;
-        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-bioindicator/1.0.3/codelijst-bioindicator-1.0.3.jar"^^xsd:anyURI ;
-        spdx:packageFileName   "codelijst-bioindicator-1.0.3.jar" ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-bioindicator/1.0.4/codelijst-bioindicator-1.0.4.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-bioindicator-1.0.4.jar" ;
         spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator" ;
         spdx:relationshipType_packageOf
                 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
-        spdx:versionInfo       "1.0.3" .
+        spdx:versionInfo       "1.0.4" .
 
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-observatieprocedure
         a                      spdx:Package ;

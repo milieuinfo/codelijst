@@ -48,11 +48,11 @@
   }, {
     "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator",
     "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-bioindicator/1.0.3/codelijst-bioindicator-1.0.3.jar",
-    "packageFileName" : "codelijst-bioindicator-1.0.3.jar",
+    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-bioindicator/1.0.4/codelijst-bioindicator-1.0.4.jar",
+    "packageFileName" : "codelijst-bioindicator-1.0.4.jar",
     "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator",
     "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "label" : {
       "@language" : "nl",
       "@value" : "Package codelijst-bioindicator"
@@ -60,11 +60,11 @@
   }, {
     "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof",
     "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.3/codelijst-chemische_stof-1.0.3.jar",
-    "packageFileName" : "codelijst-chemische_stof-1.0.3.jar",
+    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.4/codelijst-chemische_stof-1.0.4.jar",
+    "packageFileName" : "codelijst-chemische_stof-1.0.4.jar",
     "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof",
     "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.3",
+    "versionInfo" : "1.0.4",
     "label" : {
       "@language" : "nl",
       "@value" : "Package codelijst-chemische_stof"
@@ -72,11 +72,11 @@
   }, {
     "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-emissie",
     "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.0.4/codelijst-emissie-1.0.4.jar",
-    "packageFileName" : "codelijst-emissie-1.0.4.jar",
+    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.0.5/codelijst-emissie-1.0.5.jar",
+    "packageFileName" : "codelijst-emissie-1.0.5.jar",
     "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-emissie",
     "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.4",
+    "versionInfo" : "1.0.5",
     "label" : {
       "@language" : "nl",
       "@value" : "Package codelijst-emissie"
@@ -84,11 +84,11 @@
   }, {
     "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap",
     "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-fysico-chemische-eigenschap/1.0.4/codelijst-fysico-chemische-eigenschap-1.0.4.jar",
-    "packageFileName" : "codelijst-fysico-chemische-eigenschap-1.0.4.jar",
+    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-fysico-chemische-eigenschap/1.0.5/codelijst-fysico-chemische-eigenschap-1.0.5.jar",
+    "packageFileName" : "codelijst-fysico-chemische-eigenschap-1.0.5.jar",
     "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap",
     "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.4",
+    "versionInfo" : "1.0.5",
     "label" : {
       "@language" : "nl",
       "@value" : "Package codelijst-fysico-chemische-eigenschap"
@@ -96,11 +96,11 @@
   }, {
     "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-matrix",
     "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-matrix/1.0.4/codelijst-matrix-1.0.4.jar",
-    "packageFileName" : "codelijst-matrix-1.0.4.jar",
+    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-matrix/1.0.5/codelijst-matrix-1.0.5.jar",
+    "packageFileName" : "codelijst-matrix-1.0.5.jar",
     "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-matrix",
     "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.4",
+    "versionInfo" : "1.0.5",
     "label" : {
       "@language" : "nl",
       "@value" : "Package codelijst-matrix"
