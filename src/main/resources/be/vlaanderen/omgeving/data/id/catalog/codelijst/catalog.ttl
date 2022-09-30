@@ -107,6 +107,7 @@ omg_catalog:codelijst
         dcat:contactPoint     omg_vcard:helpdesk ;
         foaf:homepage         <https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html> .
 
+
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof
         a                      spdx:Package ;
         rdfs:label             "Package codelijst-chemische_stof"@nl ;
