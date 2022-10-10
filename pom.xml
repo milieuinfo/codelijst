@@ -68,7 +68,7 @@
     </resources>
   </build>
   <dependencies>
-     <dependency>
+      <dependency>
         <groupId>be.vlaanderen.omgeving.data.id.graph</groupId>
         <artifactId>codelijst-bioindicator</artifactId>
         <version>1.0.4</version>
