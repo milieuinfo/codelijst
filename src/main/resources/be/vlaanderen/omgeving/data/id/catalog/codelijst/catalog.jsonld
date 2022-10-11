@@ -34,7 +34,7 @@
       "@language" : "nl",
       "@value" : "Catalogus van datasets, codelijsten, van het domein omgeving."
     },
-    "owl:versionInfo" : "1.0.9",
+    "owl:versionInfo" : "1.0.10",
     "contactPoint" : "omg_vcard:helpdesk",
     "homepage" : "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html"
   }, {
@@ -60,11 +60,11 @@
   }, {
     "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof",
     "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.8/codelijst-chemische_stof-1.0.8.jar",
-    "packageFileName" : "codelijst-chemische_stof-1.0.8.jar",
+    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.9/codelijst-chemische_stof-1.0.9.jar",
+    "packageFileName" : "codelijst-chemische_stof-1.0.9.jar",
     "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof",
     "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.8",
+    "versionInfo" : "1.0.9",
     "label" : {
       "@language" : "nl",
       "@value" : "Package codelijst-chemische_stof"

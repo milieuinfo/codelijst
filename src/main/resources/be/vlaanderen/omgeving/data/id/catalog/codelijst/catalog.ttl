@@ -103,19 +103,19 @@ omg_catalog:codelijst
         dcterms:spatial       <https://www.geonames.org/3337388/flanders> , country:BEL ;
         dcterms:title         "Catalogus van datasets, codelijsten, van het domein omgeving."@nl ;
         void:rootResource     omg_catalog:codelijst ;
-        owl:versionInfo       "1.0.9" ;
+        owl:versionInfo       "1.0.10" ;
         dcat:contactPoint     omg_vcard:helpdesk ;
         foaf:homepage         <https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html> .
 
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof
         a                      spdx:Package ;
         rdfs:label             "Package codelijst-chemische_stof"@nl ;
-        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.8/codelijst-chemische_stof-1.0.8.jar"^^xsd:anyURI ;
-        spdx:packageFileName   "codelijst-chemische_stof-1.0.8.jar" ;
+        spdx:downloadLocation  "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.9/codelijst-chemische_stof-1.0.9.jar"^^xsd:anyURI ;
+        spdx:packageFileName   "codelijst-chemische_stof-1.0.9.jar" ;
         spdx:packageName       "be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof" ;
         spdx:relationshipType_packageOf
                 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst ;
-        spdx:versionInfo       "1.0.8" .
+        spdx:versionInfo       "1.0.9" .
 
 omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator
         a                      spdx:Package ;
