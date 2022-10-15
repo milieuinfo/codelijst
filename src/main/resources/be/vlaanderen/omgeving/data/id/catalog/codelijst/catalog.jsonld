@@ -1,245 +1,246 @@
 {
-  "@graph" : [ {
-    "@id" : "omg_catalog:codelijst",
-    "@type" : "dcat:Catalog",
-    "dc:identifier" : "be.vlaanderen.omgeving.data.id.catalog.codelijst",
-    "dc:language" : {
-      "@language" : "nl",
-      "@value" : "nl"
-    },
-    "source" : "Codelijsten omgeving.",
-    "alternative" : {
-      "@language" : "nl",
-      "@value" : "Dataset catalogus codelijsten omgeving."
-    },
-    "description" : {
-      "@language" : "nl",
-      "@value" : "De codelijsten met betrekking tot het hele domein omgeving van de Vlaamse Overheid."
-    },
-    "identifier" : "omg_catalog:codelijst",
-    "issued" : "2022-09-10",
-    "dcterms:language" : {
-      "@id" : "language:NLD"
-    },
-    "license" : "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
-    "publisher" : "ovo:OVO003323",
-    "rightsHolder" : "ovo:OVO003751",
-    "spatial" : [ "https://www.geonames.org/3337388/flanders", "country:BEL" ],
-    "title" : {
-      "@language" : "nl",
-      "@value" : "Catalogus van datasets, codelijsten, van het domein omgeving."
-    },
-    "rootResource" : "omg_catalog:codelijst",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Catalogus van datasets, codelijsten, van het domein omgeving."
-    },
-    "owl:versionInfo" : "1.0.10",
-    "contactPoint" : "omg_vcard:helpdesk",
-    "homepage" : "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html"
-  }, {
-    "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "@type" : "spdx:Package",
-    "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Package codelijst"
+    "@graph": [
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst",
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst",
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst"
+            },
+            "@type": "spdx:Package"
+        },
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap",
+            "spdx:versionInfo": "1.0.6",
+            "spdx:relationshipType_packageOf": {
+                "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst"
+            },
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap",
+            "spdx:packageFileName": "codelijst-fysico-chemische-eigenschap-1.0.6.jar",
+            "spdx:downloadLocation": {
+                "@value": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-fysico-chemische-eigenschap/1.0.6/codelijst-fysico-chemische-eigenschap-1.0.6.jar",
+                "@type": "xsd:anyURI"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst-fysico-chemische-eigenschap"
+            },
+            "@type": "spdx:Package"
+        },
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-sommatie_stoffen",
+            "spdx:versionInfo": "1.0.7",
+            "spdx:relationshipType_packageOf": {
+                "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst"
+            },
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst-sommatie_stoffen",
+            "spdx:packageFileName": "codelijst-sommatie_stoffen-1.0.7.jar",
+            "spdx:downloadLocation": {
+                "@value": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-sommatie_stoffen/1.0.7/codelijst-sommatie_stoffen-1.0.7.jar",
+                "@type": "xsd:anyURI"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst-sommatie_stoffen"
+            },
+            "@type": "spdx:Package"
+        },
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-emissie",
+            "spdx:versionInfo": "1.0.5",
+            "spdx:relationshipType_packageOf": {
+                "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst"
+            },
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst-emissie",
+            "spdx:packageFileName": "codelijst-emissie-1.0.5.jar",
+            "spdx:downloadLocation": {
+                "@value": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.0.5/codelijst-emissie-1.0.5.jar",
+                "@type": "xsd:anyURI"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst-emissie"
+            },
+            "@type": "spdx:Package"
+        },
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-matrix",
+            "spdx:versionInfo": "1.0.6",
+            "spdx:relationshipType_packageOf": {
+                "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst"
+            },
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst-matrix",
+            "spdx:packageFileName": "codelijst-matrix-1.0.6.jar",
+            "spdx:downloadLocation": {
+                "@value": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-matrix/1.0.6/codelijst-matrix-1.0.6.jar",
+                "@type": "xsd:anyURI"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst-matrix"
+            },
+            "@type": "spdx:Package"
+        },
+        {
+            "@id": "omg_catalog:codelijst",
+            "dcat:contactPoint": {
+                "@id": "omg_id:vcard/helpdesk"
+            },
+            "dcterms:spatial": [
+                {
+                    "@id": "https://www.geonames.org/3337388/flanders"
+                },
+                {
+                    "@id": "country:BEL"
+                }
+            ],
+            "dcterms:license": {
+                "@id": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0"
+            },
+            "dc:language": {
+                "@language": "nl",
+                "@value": "nl"
+            },
+            "@type": "dcat:Catalog",
+            "dcterms:title": {
+                "@language": "nl",
+                "@value": "Catalogus van datasets, codelijsten, van het domein omgeving."
+            },
+            "dc:source": "Codelijsten omgeving.",
+            "dcterms:identifier": {
+                "@id": "omg_catalog:codelijst"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Catalogus van datasets, codelijsten, van het domein omgeving."
+            },
+            "dcterms:issued": {
+                "@value": "2022-09-10",
+                "@type": "xsd:date"
+            },
+            "dc:identifier": "be.vlaanderen.omgeving.data.id.catalog.codelijst",
+            "dcterms:language": {
+                "@id": "language:NLD"
+            },
+            "dcterms:description": {
+                "@language": "nl",
+                "@value": "De codelijsten met betrekking tot het hele domein omgeving van de Vlaamse Overheid."
+            },
+            "dcterms:alternative": {
+                "@language": "nl",
+                "@value": "Dataset catalogus codelijsten omgeving."
+            },
+            "dcterms:rightsHolder": {
+                "@id": "ovo:OVO003751"
+            },
+            "owl:versionInfo": "1.0.11",
+            "dcterms:publisher": {
+                "@id": "ovo:OVO003323"
+            },
+            "foaf:homepage": {
+                "@id": "https://data.omgeving.vlaanderen.be/doc/catalog/codelijst.html"
+            },
+            "void:rootResource": {
+                "@id": "omg_catalog:codelijst"
+            }
+        },
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof",
+            "spdx:versionInfo": "1.0.10",
+            "spdx:relationshipType_packageOf": {
+                "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst"
+            },
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof",
+            "spdx:packageFileName": "codelijst-chemische_stof-1.0.10.jar",
+            "spdx:downloadLocation": {
+                "@value": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.10/codelijst-chemische_stof-1.0.10.jar",
+                "@type": "xsd:anyURI"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst-chemische_stof"
+            },
+            "@type": "spdx:Package"
+        },
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator",
+            "spdx:versionInfo": "1.0.4",
+            "spdx:relationshipType_packageOf": {
+                "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst"
+            },
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator",
+            "spdx:packageFileName": "codelijst-bioindicator-1.0.4.jar",
+            "spdx:downloadLocation": {
+                "@value": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-bioindicator/1.0.4/codelijst-bioindicator-1.0.4.jar",
+                "@type": "xsd:anyURI"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst-bioindicator"
+            },
+            "@type": "spdx:Package"
+        },
+        {
+            "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst-observatieprocedure",
+            "spdx:versionInfo": "1.0.5",
+            "spdx:relationshipType_packageOf": {
+                "@id": "omg_id:package/be.vlaanderen.omgeving.data.id.graph.codelijst"
+            },
+            "spdx:packageName": "be.vlaanderen.omgeving.data.id.graph.codelijst-observatieprocedure",
+            "spdx:packageFileName": "codelijst-observatieprocedure-1.0.5.jar",
+            "spdx:downloadLocation": {
+                "@value": "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-observatieprocedure/1.0.5/codelijst-observatieprocedure-1.0.5.jar",
+                "@type": "xsd:anyURI"
+            },
+            "rdfs:label": {
+                "@language": "nl",
+                "@value": "Package codelijst-observatieprocedure"
+            },
+            "@type": "spdx:Package"
+        }
+    ],
+    "@context": {
+        "country": "http://publications.europa.eu/resource/authority/country/",
+        "formats": "http://www.w3.org/ns/formats/",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "omg_catalog": "https://data.omgeving.vlaanderen.be/id/catalog/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "ssd": "http://www.w3.org/ns/sparql-service-description#",
+        "omg_graphcollection": "https://data.omgeving.vlaanderen.be/id/graphcollection/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "datatheme_eu": "http://publications.europa.eu/resource/authority/data-theme/",
+        "eurovoc": "http://eurovoc.europa.eu/",
+        "language": "http://publications.europa.eu/resource/authority/language/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "omg_id": "https://data.omgeving.vlaanderen.be/id/",
+        "access_right": "http://publications.europa.eu/resource/authority/access-right/",
+        "omg_dataset": "https://data.omgeving.vlaanderen.be/id/dataset/",
+        "frequency": "http://publications.europa.eu/resource/authority/frequency/",
+        "sd": "http://www.w3.org/ns/sparql-service-description#",
+        "omg_collection": "https://data.omgeving.vlaanderen.be/id/collection/",
+        "omg_periodoftime": "https://data.omgeving.vlaanderen.be/id/periodoftime/",
+        "file_type": "http://publications.europa.eu/resource/authority/file-type/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "assettype": "http://purl.org/adms/assettype/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "omg_dataservice": "https://data.omgeving.vlaanderen.be/id/dataservice/",
+        "void": "http://rdfs.org/ns/void#",
+        "adms": "http://www.w3.org/ns/adms#",
+        "gemet": "http://www.eionet.europa.eu/gemet/concept/",
+        "omg_named_graph": "https://data.omgeving.vlaanderen.be/id/namedgraph/",
+        "omg_vcard": "https://data.omgeving.vlaanderen.be/id/vcard/",
+        "ovo": "http://data.vlaanderen.be/id/organisatie/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "omg_ontology": "https://data.omgeving.vlaanderen.be/id/ontology/",
+        "omg_graph": "https://data.omgeving.vlaanderen.be/id/graph/",
+        "omg_distribution": "https://data.omgeving.vlaanderen.be/id/distribution/",
+        "omg_service": "https://data.omgeving.vlaanderen.be/id/service/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "datatheme_be": "http://vocab.belgif.be/auth/datatheme/",
+        "omg_conceptscheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+        "omg_package": "https://data.omgeving.vlaanderen.be/id/package/",
+        "dc": "http://purl.org/dc/elements/1.1/"
     }
-  }, {
-    "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator",
-    "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-bioindicator/1.0.4/codelijst-bioindicator-1.0.4.jar",
-    "packageFileName" : "codelijst-bioindicator-1.0.4.jar",
-    "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-bioindicator",
-    "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.4",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Package codelijst-bioindicator"
-    }
-  }, {
-    "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof",
-    "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-chemische_stof/1.0.9/codelijst-chemische_stof-1.0.9.jar",
-    "packageFileName" : "codelijst-chemische_stof-1.0.9.jar",
-    "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-chemische_stof",
-    "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.9",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Package codelijst-chemische_stof"
-    }
-  }, {
-    "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-emissie",
-    "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-emissie/1.0.5/codelijst-emissie-1.0.5.jar",
-    "packageFileName" : "codelijst-emissie-1.0.5.jar",
-    "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-emissie",
-    "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.5",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Package codelijst-emissie"
-    }
-  }, {
-    "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap",
-    "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-fysico-chemische-eigenschap/1.0.6/codelijst-fysico-chemische-eigenschap-1.0.6.jar",
-    "packageFileName" : "codelijst-fysico-chemische-eigenschap-1.0.6.jar",
-    "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-fysico-chemische-eigenschap",
-    "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.6",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Package codelijst-fysico-chemische-eigenschap"
-    }
-  }, {
-    "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-matrix",
-    "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-matrix/1.0.6/codelijst-matrix-1.0.6.jar",
-    "packageFileName" : "codelijst-matrix-1.0.6.jar",
-    "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-matrix",
-    "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.6",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Package codelijst-matrix"
-    }
-  }, {
-    "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-observatieprocedure",
-    "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-observatieprocedure/1.0.5/codelijst-observatieprocedure-1.0.5.jar",
-    "packageFileName" : "codelijst-observatieprocedure-1.0.5.jar",
-    "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-observatieprocedure",
-    "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.5",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Package codelijst-observatieprocedure"
-    }
-  }, {
-    "@id" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst-sommatie_stoffen",
-    "@type" : "spdx:Package",
-    "downloadLocation" : "https://repo.omgeving.vlaanderen.be/artifactory/release/be/vlaanderen/omgeving/data/id/graph/codelijst-sommatie_stoffen/1.0.7/codelijst-sommatie_stoffen-1.0.7.jar",
-    "packageFileName" : "codelijst-sommatie_stoffen-1.0.7.jar",
-    "packageName" : "be.vlaanderen.omgeving.data.id.graph.codelijst-sommatie_stoffen",
-    "relationshipType_packageOf" : "omg_package:be.vlaanderen.omgeving.data.id.graph.codelijst",
-    "versionInfo" : "1.0.7",
-    "label" : {
-      "@language" : "nl",
-      "@value" : "Package codelijst-sommatie_stoffen"
-    }
-  } ],
-  "@context" : {
-    "packageName" : {
-      "@id" : "http://spdx.org/rdf/terms#packageName"
-    },
-    "label" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
-    },
-    "versionInfo" : {
-      "@id" : "http://spdx.org/rdf/terms#versionInfo"
-    },
-    "relationshipType_packageOf" : {
-      "@id" : "http://spdx.org/rdf/terms#relationshipType_packageOf",
-      "@type" : "@id"
-    },
-    "packageFileName" : {
-      "@id" : "http://spdx.org/rdf/terms#packageFileName"
-    },
-    "downloadLocation" : {
-      "@id" : "http://spdx.org/rdf/terms#downloadLocation",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
-    "contactPoint" : {
-      "@id" : "http://www.w3.org/ns/dcat#contactPoint",
-      "@type" : "@id"
-    },
-    "spatial" : {
-      "@id" : "http://purl.org/dc/terms/spatial",
-      "@type" : "@id"
-    },
-    "license" : {
-      "@id" : "http://purl.org/dc/terms/license",
-      "@type" : "@id"
-    },
-    "language" : "http://publications.europa.eu/resource/authority/language/",
-    "title" : {
-      "@id" : "http://purl.org/dc/terms/title"
-    },
-    "source" : {
-      "@id" : "http://purl.org/dc/elements/1.1/source"
-    },
-    "identifier" : {
-      "@id" : "http://purl.org/dc/terms/identifier",
-      "@type" : "@id"
-    },
-    "issued" : {
-      "@id" : "http://purl.org/dc/terms/issued",
-      "@type" : "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "description" : {
-      "@id" : "http://purl.org/dc/terms/description"
-    },
-    "alternative" : {
-      "@id" : "http://purl.org/dc/terms/alternative"
-    },
-    "rightsHolder" : {
-      "@id" : "http://purl.org/dc/terms/rightsHolder",
-      "@type" : "@id"
-    },
-    "publisher" : {
-      "@id" : "http://purl.org/dc/terms/publisher",
-      "@type" : "@id"
-    },
-    "homepage" : {
-      "@id" : "http://xmlns.com/foaf/0.1/homepage",
-      "@type" : "@id"
-    },
-    "rootResource" : {
-      "@id" : "http://rdfs.org/ns/void#rootResource",
-      "@type" : "@id"
-    },
-    "country" : "http://publications.europa.eu/resource/authority/country/",
-    "formats" : "http://www.w3.org/ns/formats/",
-    "spdx" : "http://spdx.org/rdf/terms#",
-    "owl" : "http://www.w3.org/2002/07/owl#",
-    "omg_catalog" : "https://data.omgeving.vlaanderen.be/id/catalog/",
-    "ssd" : "http://www.w3.org/ns/sparql-service-description#",
-    "xsd" : "http://www.w3.org/2001/XMLSchema#",
-    "omg_graphcollection" : "https://data.omgeving.vlaanderen.be/id/graphcollection/",
-    "skos" : "http://www.w3.org/2004/02/skos/core#",
-    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
-    "datatheme_eu" : "http://publications.europa.eu/resource/authority/data-theme/",
-    "eurovoc" : "http://eurovoc.europa.eu/",
-    "omg_id" : "https://data.omgeving.vlaanderen.be/id/",
-    "omg_dataset" : "https://data.omgeving.vlaanderen.be/id/dataset/",
-    "access_right" : "http://publications.europa.eu/resource/authority/access-right/",
-    "frequency" : "http://publications.europa.eu/resource/authority/frequency/",
-    "sd" : "http://www.w3.org/ns/sparql-service-description#",
-    "omg_periodoftime" : "https://data.omgeving.vlaanderen.be/id/periodoftime/",
-    "omg_collection" : "https://data.omgeving.vlaanderen.be/id/collection/",
-    "file_type" : "http://publications.europa.eu/resource/authority/file-type/",
-    "dcterms" : "http://purl.org/dc/terms/",
-    "dcat" : "http://www.w3.org/ns/dcat#",
-    "foaf" : "http://xmlns.com/foaf/0.1/",
-    "assettype" : "http://purl.org/adms/assettype/",
-    "omg_dataservice" : "https://data.omgeving.vlaanderen.be/id/dataservice/",
-    "void" : "http://rdfs.org/ns/void#",
-    "adms" : "http://www.w3.org/ns/adms#",
-    "gemet" : "http://www.eionet.europa.eu/gemet/concept/",
-    "omg_named_graph" : "https://data.omgeving.vlaanderen.be/id/namedgraph/",
-    "omg_vcard" : "https://data.omgeving.vlaanderen.be/id/vcard/",
-    "ovo" : "http://data.vlaanderen.be/id/organisatie/",
-    "vcard" : "http://www.w3.org/2006/vcard/ns#",
-    "omg_ontology" : "https://data.omgeving.vlaanderen.be/id/ontology/",
-    "omg_graph" : "https://data.omgeving.vlaanderen.be/id/graph/",
-    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "omg_distribution" : "https://data.omgeving.vlaanderen.be/id/distribution/",
-    "omg_service" : "https://data.omgeving.vlaanderen.be/id/service/",
-    "datatheme_be" : "http://vocab.belgif.be/auth/datatheme/",
-    "omg_conceptscheme" : "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
-    "omg_package" : "https://data.omgeving.vlaanderen.be/id/package/",
-    "dc" : "http://purl.org/dc/elements/1.1/"
-  }
 }
