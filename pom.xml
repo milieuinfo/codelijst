@@ -86,7 +86,7 @@
       <dependency>
         <groupId>be.vlaanderen.omgeving.data.id.graph</groupId>
         <artifactId>codelijst-fysico-chemische-eigenschap</artifactId>
-        <version>1.0.6</version>
+        <version>1.0.7</version>
       </dependency>
       <dependency>
         <groupId>be.vlaanderen.omgeving.data.id.graph</groupId>
