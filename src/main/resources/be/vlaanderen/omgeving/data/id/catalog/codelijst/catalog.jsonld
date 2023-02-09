@@ -83,10 +83,10 @@
         },
         {
             "@id": "omg_catalog:codelijst",
+            "owl:versionInfo": "1.0.13",
             "dcat:contactPoint": {
                 "@id": "omg_id:vcard/helpdesk"
             },
-            "owl:versionInfo": "1.0.12",
             "dcterms:spatial": [
                 {
                     "@id": "https://www.geonames.org/3337388/flanders"
